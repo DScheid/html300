@@ -33,9 +33,20 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-.canvas-aside {
+.canvas {
+  background-color: pink;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.canvas__aside {
   background-color: purple;
   width: 35%;
   display: flex;
@@ -43,7 +54,7 @@ nav {
   align-items: center;
 }
 
-.canvas-content {
+.canvas__content {
   background-color: orange;
   width: 65%;
   height: inherit;
@@ -57,11 +68,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.canvas {
-  background-color: pink;
-  height:100%;
-  display:flex;
-  flex-direction: row;
 }
