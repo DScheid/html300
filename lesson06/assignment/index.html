@@ -42,6 +42,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript">
 
+    //HTML templates for individual 'pages'
     let grid = `
     <div class='grid-wrapper mt-4'>
       <div class='row'>
@@ -102,20 +103,26 @@
         </div>
       </div>
     `
+
+    //When the document is loaded and JQuery is ready...
     $(function() {
       console.log("ready!")
+      // When the grid nav item is clicked
       $("#grid-button").click(function() {
         $( "main" ).empty();
         $( "main" ).append(grid);
       });
+      // When the images nav item is clicked
       $("#images-button").click(function() {
         $( "main" ).empty();
         $( "main" ).append(imgs);
       });
+      // When the home nav item is clicked
       $("#jumbo-button").click(function() {
         $( "main" ).empty();
         $( "main" ).append(jumbo);
       });
+      // When the accordion nav item is clicked
       $("#accord-button").click(function() {
         $( "main" ).empty();
         $( "main" ).append(accord);
