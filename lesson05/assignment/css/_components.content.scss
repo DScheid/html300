@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    color: white;
 }
 
 *,
@@ -9,5 +10,62 @@ html {
 }
 
 .main {
+    height: 100%;
+    width: 100%;
     padding: 2rem;
+    display: grid;
+    grid-template-rows: 15% 10% 60% 15%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: red;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.canvas {
+  background-color: pink;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.canvas__aside {
+  background-color: purple;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas__content {
+  background-color: orange;
+  width: 65%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
