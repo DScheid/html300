@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+//Force main to be full width
+.main {
+  display: inline-block;
+  width: 100vw;
+}
+
+img {
+  width: 50%;
+}
