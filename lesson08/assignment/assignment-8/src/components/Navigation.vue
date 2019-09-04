@@ -2,7 +2,7 @@
   <div class="mb-3">
     <nav>
       <!-- Slot to accept text from parent componenet -->
-      <slot></slot>
+      <slot name="something">Welcome</slot>
       <router-link class="spacing" v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
     </nav>
   </div>

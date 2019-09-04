@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Navigation stays always, other content is flexible.  'Welcome' text in the header for slot -->
-    <Navigation>Welcome</Navigation>
+    <Navigation slot="something"></Navigation>
     <router-view/>
   </div>
 </template>
